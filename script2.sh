@@ -1,2 +1,3 @@
-sleep 10m
+sleep 1m
 touch /tmp/test2
+echo "Done"

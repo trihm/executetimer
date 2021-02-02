@@ -4,5 +4,5 @@ RUN apk add at bash
 RUN mkdir /script
 WORKDIR /script
 COPY . /script
-RUN chmod +x *.sh
-CMD /script/timer.sh
+RUN chmod +x timer.sh
+CMD /bin/sh
