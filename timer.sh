@@ -11,9 +11,9 @@ do
 done
 echo $max
 #Dat timer theo tung scene
-for index in $(timer[@]);
+for index in ${timer[@]};
 do
-  at -f $(scene[$index]) now +$(timer[@]) minutes
+  at -f ${scene[$index]} now +${timer[@]} minutes
 done
 sleep "$max"m
 while [ ! -z "$(pgrep -x sh)" ]
