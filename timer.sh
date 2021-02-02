@@ -9,6 +9,7 @@ for i in ${timer[@]};
 do
   (( i > $max )) && max=$i
 done
+echo $max
 #Dat timer theo tung scene
 for index in $(timer[@]);
 do
