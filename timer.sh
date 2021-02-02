@@ -9,8 +9,9 @@ for i in ${timer[@]};
 do
   (( i > $max )) && max=$i
 done
+echo $max
 #Dat timer theo tung scene
-for index in $({timer[@]});
+for index in $(timer[@]);
 do
   at -f $(scene[$index]) now +$(timer[@]) minutes
 done
