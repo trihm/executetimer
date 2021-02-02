@@ -1,3 +1,3 @@
 sleep 1m
 touch /tmp/test2
-echo "Done"
+echo " Phrase 2 Done" >> /tmp/test

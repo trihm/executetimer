@@ -6,3 +6,4 @@ while [ ! -z "$(pgrep -x sh)" ]
 do 
   sleep 1m
 done
+cat /tmp/test
