@@ -14,3 +14,8 @@ for index in $({timer[@]});
 do
   at -f $(scene[$index]) now +$(timer[@]) minutes
 done
+sleep "$max"m
+while [ ! -z "$(pgrep -x sh)" ]
+do 
+  sleep 1m
+done
